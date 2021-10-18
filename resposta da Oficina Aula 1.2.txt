@@ -1,0 +1,45 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
+#Um programa Python que faz a leitura do nome, da idade, do peso e da altura de uma pessoa, e calcula o Índice de Massa Corporal (IMC) dela.
+#Variáveis que eu vou trabahjar
+# Nome
+# Idade
+# Peso
+# Altura
+# IMC
+
+# Cálculadora de Índice de Massa Corporal
+
+
+print("Super Calculadora para verificação do IMC de DELL ")
+nome = input("Por favor digite o seu nome \n")
+idade = input("Por favor digite a sua idade, " +nome+ "")
+print("Seja bem vindo(a) " +nome+ " de " +idade+ " anos,  à calculo do imc da interativa da DELL \n") 
+altura = float(input("Digite sua altura em metros: "))
+peso = float(input("Digite seu peso em Kg: "))
+ 
+imc = peso / altura**2
+ 
+print("Seu IMC é: %.4f" % imc)
+ 
+if imc < 16:
+	print("Magreza grave, " +nome+ "")
+elif imc < 17:
+	print("Magreza moderada, " +nome+ "")
+elif imc < 18.5:
+	print("Magreza leve, " +nome+ "")
+elif imc < 25:
+	print("Saudável, " +nome+ "")
+elif imc < 30:
+	print("Sobrepeso, " +nome+ "")
+elif imc < 35:
+	print("Obesidade Grau I, " +nome+ "")
+elif imc < 40:
+	print("Obesidade Grau II (severa), " +nome+ "")
+else:
+	print("Obesidade Grau III (mórbida), " +nome+ "")
